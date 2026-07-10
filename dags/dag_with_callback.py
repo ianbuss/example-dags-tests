@@ -25,7 +25,7 @@ with DAG(
 
     BashOperator(
         task_id="transform",
-        bash_command="sleep 5",
+        bash_command="sleep 10 && touch /tmp/slept",
         cwd=".",
     )
 
