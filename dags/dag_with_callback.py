@@ -34,3 +34,9 @@ with DAG(
         bash_command="true",
         cwd=".",
     )
+
+    BashOperator(
+        task_id="load_again",
+        bash_command="true",
+        cwd=".",
+    )
